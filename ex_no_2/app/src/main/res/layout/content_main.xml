@@ -1,0 +1,105 @@
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="40dp"
+        android:text="Name"/>
+
+    <EditText
+        android:id="@+id/editext1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView1"
+        android:layout_marginLeft="14dp"
+        android:layout_toRightOf="@+id/textView1"
+        tools:ignore="TextFields">
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/editext1"
+        android:layout_marginTop="14dp"
+        android:text="Gender"
+        android:layout_marginLeft="40dp" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner1"
+        android:layout_alignLeft="@id/editext1"
+        android:layout_alignTop="@id/textView2"
+        android:entries="@array/Gender" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/spinner1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/spinner1"
+        android:layout_marginLeft="40dp"
+        android:text="Degree"
+        android:layout_marginTop="14dp"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioGroup1"
+        android:layout_alignLeft="@+id/spinner1"
+        android:layout_below="@+id/spinner1">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radio0"
+            android:checked="true"
+            android:text="BE CSE" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radio1"
+            android:checked="true"
+            android:text="BTech IT" />
+
+    </RadioGroup>
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_below="@id/textView4"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="50dp"
+        android:id="@+id/ratingBar1"/>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ratingBar1"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="40dp"
+        android:text="SUBMIT"
+        tools:ignore="HardcodedText" />
+
+
+</RelativeLayout>
